@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 
@@ -19,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     scroll-behavior: smooth;
     color: var(--black);
@@ -54,13 +56,13 @@ header {
     align-items: center;
 }
 
-.header-content-last a {
+.header-content-last a:first-child {
     margin-right: 25px;
 }
 
-.header-content-last img {
+/* .header-content-last img {
     margin-right: 25px;
-}
+} */
 
 .header-content-last a:last-of-type,
 .main-content-buttons a {
@@ -97,7 +99,13 @@ nav .checked {
     color: var(--orange);
 }
 
+.logo-header {
+    padding: auto 18px;
+}
 
+.logo-header .logo-orange {
+    color: var(--orange);
+}
 
 /* MAIN */
 main {
@@ -160,3 +168,53 @@ main {
     transform: scale(1.1);
 }
 
+
+
+/* WELCOME */
+.welcome {
+    /* background: #ECFAF1; */
+    /* или так */
+    background: rgba(63, 198, 110, 0.1)
+}
+
+.welcome-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-inner h2,
+.welcome-inner .text-orange {
+    margin-top: 188px;
+    margin-bottom: 60px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 110%;
+    font-family: 'Tinos', sans-serif;
+}
+
+.welcome-inner p {
+    margin-bottom: 122px;
+    color: #5C4529;
+    line-height: 200%;
+}
+
+.welcome-inner .text-orange {
+    color: var(--orange);
+}
+
+.welcome-inner a {
+    background: var(--orange);
+    color: #fff;
+    padding: 25px 45px;
+    border-radius: 162px;
+    text-decoration: none;
+    height: 75px;
+    transition: all .5s ease;
+    margin-bottom: 188px;
+    display: inline-block;
+}
+
+.welcome-inner a:hover {
+    background: var(--green);
+}
