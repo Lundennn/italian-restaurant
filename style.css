@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+/* создание переменных */
+/* чтобы использовать изи прописываем var() */
+:root {
+    --black: #311F09;
+    --orange: #FF8A00;
+    --green: #3FA72F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    color: var(--black);
+}
+
+.container {
+    /* максимальная ширина блока */
+    max-width: 1237px;
+    margin: 0px auto;
+}
+
+/* HEADER */
+/* внеш.отступы прописываем в глобальный блок! */
+header {
+    margin: 51px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    /* выравнивает элементы по центру */
+    align-items: center;
+    /* решение проблемы с внеш.отступами - Flex-элементы внутри .header-content могут вести себя непредсказуемо при наличии больших margin.*/
+    /* margin: 51px;
+    width: 100%; */
+}
+
+.header-content-last {
+    display: flex;
+    /* без флекаса не работает */
+    align-items: center;
+}
+
+.header-content-last a {
+    margin-right: 25px;
+}
+
+.header-content-last img {
+    margin-right: 25px;
+}
+
+.header-content-last a:last-of-type {
+    background: var(--green);
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 34px;
+    border-radius: 133px;
+    transition: all 500ms ease;
+}
+
+.header-content-last a:last-of-type:hover {
+    background: var(--orange);
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 45px;
+    transition: all .5s ease;
+    /* по умолчанию ссылки имеют display: inline;, поэтому нам нужно это оставить, но сделать их блочными, для создания анимации увеличения*/
+    display: inline-block;
+}
+
+nav a:hover {
+    color:  var(--green);
+    transform: scale(1.1);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav .checked {
+    color: var(--orange);
+}
+
