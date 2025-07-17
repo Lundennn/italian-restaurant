@@ -173,14 +173,17 @@ main {
     background: rgba(63, 198, 110, 0.1)
 }
 
-.welcome-inner {
+.welcome-inner,
+.reserve-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .welcome-inner h2,
-.welcome-inner .text-orange {
+.welcome-inner .text-orange,
+.reserve-inner h2,
+.reserve-inner .text-orange {
     margin-top: 188px;
     margin-bottom: 60px;
     font-size: 80px;
@@ -189,17 +192,20 @@ main {
     font-family: 'Tinos', sans-serif;
 }
 
-.welcome-inner p {
+.welcome-inner p,
+.reserve-inner p {
     margin-bottom: 122px;
     color: #5C4529;
     line-height: 200%;
 }
 
-.welcome-inner .text-orange {
+.welcome-inner .text-orange,
+.reserve-inner .text-orange {
     color: var(--orange);
 }
 
-.welcome-inner a {
+.welcome-inner a,
+.reserve-inner a {
     background: var(--orange);
     color: #fff;
     padding: 25px 45px;
@@ -212,7 +218,8 @@ main {
     line-height: 1;
 }
 
-.welcome-inner a:hover {
+.welcome-inner a:hover,
+.reserve-inner a:hover {
     background: var(--green);
 }
 
@@ -386,4 +393,32 @@ main {
     letter-spacing: 3px;
     font-size: 20px;
     font-weight: 800;
+}
+
+/* RESERVE */
+.reserve {
+    background: rgba(255, 244, 231, 0.4);
+    padding-top: 113px;
+    padding-bottom: 40px;
+
+}
+
+.reserve .container {
+    max-width: 1440px;
+}
+
+.reserve-left {
+    margin-left: -162px;
+}
+
+.reserve-right {
+    margin-right: 103px;
+}
+
+.reserve .reserve-inner .reserve-right h2 {
+    width: 453px;
+}
+
+.reserve .reserve-inner .reserve-right p {
+    width: 433px;
 }
