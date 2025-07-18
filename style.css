@@ -479,3 +479,66 @@ main {
     background-color: var(--green);
     transform: scale(1.1);
 }
+
+
+
+/* CUSTOMERS */
+.customers {
+    background-color: rgba(208, 204, 199, 0.1);
+    padding: 100px 0px 100px 0px;
+}
+
+.customers-inner {
+    background: url(../images/round.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+}
+
+.customers-inner h2 {
+    font-family: 'Tinos', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 70px;
+}
+
+.customers-inner h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.customers-inner h4 {
+    margin-bottom: 90px;
+}
+
+.customers-inner img {
+    margin-bottom: 40px;
+}
+
+.customers-inner .customers-about-inner {
+    position: relative;
+    width: 524px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.customers-inner .customers-about-inner p {
+    color: #5C4529;
+    line-height: 200%;
+}
+
+#dot1 {
+    position: absolute;
+    top: -50px;
+    left: -35px;
+    rotate: 180deg;
+}
+
+#dot2 {
+    position: absolute;
+    bottom: -90px;
+    right: -35px;
+}
